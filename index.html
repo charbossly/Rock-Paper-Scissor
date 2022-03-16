@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="start">
+      <button id="start">START</button>
+    </div>
+    <div class="game-table">
+      <div class="card">
+        <h4>Computer</h4>
+        <div id="computer-game" class="playergame">
+          <img src="./images/rock-pngrepo-com.png" alt="" />
+        </div>
+      </div>
+      <div class="card">
+        <h4>User</h4>
+        <div id="user-game" class="playergame"></div>
+      </div>
+    </div>
+    <div class="results">
+      <div class="status">Click on Start and make Choice</div>
+      <div class="scores">
+        <div class="score-computer">0</div>
+        <div class="score-user">0</div>
+      </div>
+    </div>
+    <div class="choix">
+      <div class="card" onclick="userPlay(this)" id="1">
+        <h4>Rock</h4>
+        <div id="rock-game" class="playergame">
+          <img src="./images/rock-pngrepo-com.png" alt="" />
+        </div>
+      </div>
+      <div class="card" onclick="userPlay(this)" id="2">
+        <h4>Paper</h4>
+        <div id="paper-game" class="playergame">
+          <img src="./images/paper-pngrepo-com.png" alt="" />
+        </div>
+      </div>
+      <div class="card" onclick="userPlay(this)" id="3">
+        <h4>Scissor</h4>
+        <div id="scissor-game" class="playergame">
+          <img src="./images/scissors-pngrepo-com.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
